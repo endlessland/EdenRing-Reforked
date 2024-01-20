@@ -1,5 +1,12 @@
 package paulevs.edenring;
 
+import org.betterx.bclib.api.v2.datafixer.DataFixerAPI;
+import org.betterx.bclib.api.v2.datafixer.ForcedLevelPatch;
+import org.betterx.bclib.api.v2.datafixer.MigrationProfile;
+import org.betterx.bclib.creativetab.BCLCreativeTabManager;
+import org.betterx.bclib.registry.BaseRegistry;
+import org.betterx.worlds.together.util.Logger;
+
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.core.Registry;
@@ -14,13 +21,6 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
-import org.betterx.bclib.api.v2.datafixer.DataFixerAPI;
-import org.betterx.bclib.api.v2.datafixer.ForcedLevelPatch;
-import org.betterx.bclib.api.v2.datafixer.MigrationProfile;
-import org.betterx.bclib.creativetab.BCLCreativeTabManager;
-import org.betterx.bclib.registry.BaseRegistry;
-import org.betterx.worlds.together.util.Logger;
-
 import paulevs.edenring.config.Configs;
 import paulevs.edenring.paintings.EdenPaintings;
 import paulevs.edenring.registries.EdenBiomes;
@@ -136,4 +136,5 @@ public void onInitialize() {
 
 public static ResourceLocation makeID(String path) {
   return new ResourceLocation(MOD_ID, path);
+}
 }

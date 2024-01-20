@@ -18,8 +18,8 @@ Building:
 * Mod .jar will be in ./build/libs
 
 Mod Request:
-* Sodium
-* Iris
-* BCLib 3.0.11 (v3.0.12 unsupported)
+* Sodium (whatever version)
+* Iris (whatever version)
+* BCLib 3.0.14 (Fabric loader 0.15.0 Hasn't Been unsupported)
 * These mods make the vanilla grass and leaves render correctly in edenring biomes.
 
