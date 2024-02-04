@@ -21,6 +21,7 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import org.betterx.worlds.together.world.WorldConfig;
 import paulevs.edenring.config.Configs;
 import paulevs.edenring.paintings.EdenPaintings;
 import paulevs.edenring.registries.EdenBiomes;
@@ -44,7 +45,8 @@ public static final ResourceKey<Level> EDEN_RING_KEY = ResourceKey.create(Regist
 	
 @Override
 public void onInitialize() {
-  BCLCreativeTabManager.create(EdenRing.MOD_ID)
+  WorldConfig.registerModCache(MOD_ID); //idk
+  BCLCreativeTabManager.create(MOD_ID)
       .createTab("eden_tab")
       .setPredicate(
           item -> BaseRegistry.getModBlockItems(MOD_ID).contains(item)
@@ -64,7 +66,7 @@ public void onInitialize() {
   EdenEntities.init();
   EdenItems.init();
   EdenFeatures.register();
-  EdenRecipes.init();
+//  EdenRecipes.register(); Use data generation
   Configs.saveConfigs();
   
   Registry.register(BuiltInRegistries.BIOME_SOURCE, makeID("biome_source"), EdenBiomeSource.CODEC);
