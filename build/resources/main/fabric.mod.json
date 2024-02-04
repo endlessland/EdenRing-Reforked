@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "edenring",
-	"version": "0.6.6",
+	"version": "0.6.9",
 	"name": "EdenRing",
 	"description": "Sci-Fi dimension mod with some unique things",
 	"authors": [
@@ -22,6 +22,9 @@
 		],
 		"client": [
 			"paulevs.edenring.client.EdenRingClient"
+		],
+		"fabric-datagen": [
+			"paulevs.datagen.EdenRingDatagen"
 		]
 	},
 	"mixins": [

@@ -1,3 +1,6 @@
+paulevs.datagen
+paulevs.datagen.recipes
+paulevs.datagen.worldgen
 paulevs.edenring
 paulevs.edenring.blocks
 paulevs.edenring.blocks.complex
@@ -11,8 +14,6 @@ paulevs.edenring.client.environment.animation
 paulevs.edenring.client.environment.renderers
 paulevs.edenring.client.environment.weather
 paulevs.edenring.config
-paulevs.edenring.datagen
-paulevs.edenring.datagen.worldgen
 paulevs.edenring.entities
 paulevs.edenring.gui
 paulevs.edenring.interfaces

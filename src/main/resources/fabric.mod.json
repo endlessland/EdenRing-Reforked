@@ -22,6 +22,9 @@
 		],
 		"client": [
 			"paulevs.edenring.client.EdenRingClient"
+		],
+		"fabric-datagen": [
+			"paulevs.datagen.EdenRingDatagen"
 		]
 	},
 	"mixins": [
