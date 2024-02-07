@@ -9,9 +9,9 @@
 		"y3z0n (music and sounds)"
 	],
 	"contact": {
-		"homepage": "https://www.curseforge.com/minecraft/mc-mods/eden-ring",
-		"issues": "https://github.com/paulevsGitch/EdenRing/issues",
-		"sources": "https://github.com/paulevsGitch/EdenRing"
+		"homepage": "https://modrinth.com/mod/eden-ring-reforked",
+		"issues": "https://github.com/ErzeKawek/EdenRing-Reforked/issues",
+		"sources": "https://github.com/ErzeKawek/EdenRing-Reforked"
 	},
 	"license": "MIT",
 	"icon": "assets/edenring/icon.png",
@@ -47,7 +47,7 @@
 		"bclib": {
 			"updater_icon": "icon_updater.png",
 			"downloads": {
-				"curseforge": "https://www.curseforge.com/minecraft/mc-mods/eden-ring"
+				"curseforge": "https://modrinth.com/mod/eden-ring-reforked"
 			}
 		}
 	}
