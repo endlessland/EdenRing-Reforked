@@ -24,14 +24,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import org.betterx.worlds.together.world.WorldConfig;
 import paulevs.edenring.config.Configs;
 import paulevs.edenring.paintings.EdenPaintings;
-import paulevs.edenring.registries.EdenBiomes;
-import paulevs.edenring.registries.EdenBlockEntities;
-import paulevs.edenring.registries.EdenBlocks;
-import paulevs.edenring.registries.EdenEntities;
-import paulevs.edenring.registries.EdenFeatures;
-import paulevs.edenring.registries.EdenItems;
-import paulevs.edenring.registries.EdenRecipes;
-import paulevs.edenring.registries.EdenSounds;
+import paulevs.edenring.registries.*;
 import paulevs.edenring.world.EdenPortal;
 import paulevs.edenring.world.generator.EdenBiomeSource;
 import paulevs.edenring.world.generator.GeneratorOptions;
@@ -67,6 +60,7 @@ public void onInitialize() {
   EdenItems.init();
   EdenFeatures.register();
 //  EdenRecipes.register(); Use data generation
+  EdenParticles.ensureStaticallyLoadedServerside();
   Configs.saveConfigs();
   
   Registry.register(BuiltInRegistries.BIOME_SOURCE, makeID("biome_source"), EdenBiomeSource.CODEC);
