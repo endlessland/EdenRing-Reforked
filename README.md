@@ -1,8 +1,8 @@
 [![](https://jitpack.io/v/paulevsGitch/EdenRing.svg)](https://jitpack.io/#paulevsGitch/EdenRing)
 
-# Eden Ring
+# Eden Ring Reforked
 
-Custom Sci-Fi dimension mod for Fabric, MC 1.20.1
+This Is A Fork Of Paulevs Eden Ring Mod for MC 1.20.1 and Up
 
 Importing:
 
@@ -18,8 +18,7 @@ Building:
 * Mod .jar will be in ./build/libs
 
 Mod Request:
-* Sodium (whatever version)
-* Iris (whatever version)
-* BCLib 3.0.14 (Fabric loader 0.15.0 Hasn't Been unsupported)
-* These mods make the vanilla grass and leaves render correctly in edenring biomes.
+* Sodium (To Fix Some Visual Bugs)
+* BCLib 3.0.14
+* Fabric API (Obviously)
 
