@@ -26,7 +26,7 @@ public class LakesideDesertBiome extends EdenRingBiome.Config {
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultLandFeatures(builder);
         builder
-                .fogDensity(1.75F)
+                .fogDensity(1F)
                 .skyColor(113, 178, 255)
                 .fogColor(237, 235, 203)
                 .grassColor(246, 222, 173)

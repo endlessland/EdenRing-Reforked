@@ -23,6 +23,7 @@ public class PulseForestBiome extends EdenRingBiome.Config {
                 .fogColor(115, 235, 242)
                 .plantsColor(121, 238, 248)
                 .loop(EdenSounds.AMBIENCE_PULSE_FOREST)
+                .music(EdenSounds.MUSIC_PULSE_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_TALL_GRASS)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_LARGE_FERN)

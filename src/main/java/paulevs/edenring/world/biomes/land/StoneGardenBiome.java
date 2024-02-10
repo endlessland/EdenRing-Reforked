@@ -19,6 +19,7 @@ public class StoneGardenBiome extends EdenRingBiome.Config {
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultLandFeatures(builder);
         builder
+                .fogDensity(1F)
                 .plantsColor(162, 190, 113)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_TALL_GRASS)

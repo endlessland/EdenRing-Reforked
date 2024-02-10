@@ -19,11 +19,12 @@ public class BrainStormBiome extends EdenRingBiome.Config {
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultLandFeatures(builder);
         builder
-                .fogDensity(2.0F)
+                .fogDensity(1F)
                 .skyColor(113, 178, 255)
                 .fogColor(180, 180, 180)
                 .plantsColor(200, 200, 200)
                 .loop(EdenSounds.AMBIENCE_BRAINSTORM)
+                .music(EdenSounds.MUSIC_BRAINSTORM)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_TALL_GRASS)
                 .feature(EdenFeatures.TALL_COPPER_GRASS)

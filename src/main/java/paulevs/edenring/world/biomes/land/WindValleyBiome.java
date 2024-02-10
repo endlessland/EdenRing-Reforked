@@ -20,6 +20,7 @@ public class WindValleyBiome extends EdenRingBiome.Config {
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultLandFeatures(builder);
         builder
+                .fogDensity(1F)
                 .skyColor(113, 178, 255)
                 .fogColor(183, 212, 255)
                 .grassColor(225, 84, 72)

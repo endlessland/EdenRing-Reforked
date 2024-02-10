@@ -21,6 +21,7 @@ public class MycoticForestBiome extends EdenRingBiome.Config {
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultLandFeatures(builder);
         builder
+                .fogDensity(1F)
                 .grassColor(220, 130, 189)
                 .foliageColor(152, 90, 131)
                 .skyColor(113, 178, 255)

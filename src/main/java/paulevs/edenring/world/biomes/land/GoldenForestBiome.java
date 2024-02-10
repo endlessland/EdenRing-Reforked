@@ -19,6 +19,7 @@ public class GoldenForestBiome extends EdenRingBiome.Config {
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultLandFeatures(builder);
         builder
+                .fogDensity(1F)
                 .plantsColor(255, 174, 100)
                 .skyColor(113, 178, 255)
                 .fogColor(183, 212, 255)

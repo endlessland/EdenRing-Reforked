@@ -19,6 +19,7 @@ public class SkyColonyBiome extends EdenRingBiome.Config {
         BiomesCommonMethods.addDefaultVoidFeatures(builder);
         builder
                 .spawn(EdenEntities.DISKWING, 20, 3, 6)
+                .fogDensity(1F)
                 .fogColor(0x84d341)
                 .waterColor(0x1e7d56)
                 .plantsColor(0x1e7d56)
