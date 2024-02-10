@@ -54,7 +54,6 @@ public class ScatterFeature extends DefaultFeature {
 	protected int getCount(RandomSource random) {
 		return MHelper.randRange(10, 20, random);
 	}
-	
 	protected void placeBlock(WorldGenLevel level, BlockPos pos, BlockState state) {
 		BlocksHelper.setWithoutUpdate(level, pos, state);
 	}

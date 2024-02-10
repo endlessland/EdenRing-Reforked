@@ -52,6 +52,5 @@ public abstract class CeilScatterFeature extends DefaultFeature {
 		
 		return true;
 	}
-	
 	protected abstract void generate(WorldGenLevel level, MutableBlockPos pos, RandomSource random);
 }

@@ -63,7 +63,7 @@ public class VolvoxFeature extends DefaultFeature {
 		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
 		int count = MHelper.randRange(3, 7, random);
 		pos = getCentered(pos, random);
-		float distance = MHelper.randRange(4F, 6F, random);
+		float distance = MHelper.randRange(4F, 5F, random);
 		List<Vector3f> points = makeFibonacciPoints(count);
 		for (int i = 0; i < count; i++) {
 			Vector3f p = points.get(i);
@@ -78,7 +78,7 @@ public class VolvoxFeature extends DefaultFeature {
 	private void generateMedium(WorldGenLevel level, BlockPos pos, RandomSource random) {
 		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
 		BlockState water = Blocks.WATER.defaultBlockState();
-		float radius = MHelper.randRange(5F, 8F, random);
+		float radius = MHelper.randRange(5F, 10F, random);
 		pos = getRandom(pos, random);
 		List<BlockPos> sphere = new ArrayList<BlockPos>();
 		makeSphere(level, pos, radius, random.nextFloat(), volvox, water, sphere);
@@ -89,7 +89,7 @@ public class VolvoxFeature extends DefaultFeature {
 		BlockState volvoxDense = EdenBlocks.VOLVOX_BLOCK_DENSE.defaultBlockState();
 		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
 		BlockState water = Blocks.WATER.defaultBlockState();
-		float radius = MHelper.randRange(8F, 15F, random);
+		float radius = MHelper.randRange(10F, 20F, random);
 		pos = getCentered(pos, random);
 		List<BlockPos> sphere = new ArrayList<BlockPos>();
 		makeSphere(level, pos, radius, MHelper.randRange(0.5F, 0.75F, random), volvox, water, sphere);
@@ -110,7 +110,6 @@ public class VolvoxFeature extends DefaultFeature {
 			spline.add(spline.get(0));
 			SplineHelper.fillSplineForce(spline, level, volvoxDense, pos, state -> state.canBeReplaced() || state.equals(volvox));
 		}
-		
 		addSmallPlants(level, pos, sphere, random);
 	}
 	
