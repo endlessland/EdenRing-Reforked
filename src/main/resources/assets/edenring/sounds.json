@@ -24,16 +24,6 @@
 		"category": "music",
 		"sounds": [
 			{
-				"name": "edenring:music/y3z0n-eternality",
-				"volume": 0.5,
-				"stream": true
-			},
-			{
-				"name": "edenring:music/y3z0n-infinity",
-				"volume": 0.5,
-				"stream": true
-			},
-			{
 				"name": "edenring:music/y3z0n-journeys",
 				"volume": 0.5,
 				"stream": true
@@ -56,7 +46,6 @@
 			}
 		]
 	},
-
 	"edenring.music.brainstorm" : {
 		"category": "music",
 		"sounds" : [
@@ -67,7 +56,28 @@
 			}
 		]
 	},
-	
+	"edenring.music.infinity" : {
+		"category": "music",
+		"sounds" : [
+			{
+				"name": "edenring:music/y3z0n-infinity",
+				"volume": 0.5,
+				"stream": true
+			}
+		]
+	},
+	"edenring.music.eternality" : {
+		"category": "music",
+		"sounds" : [
+			{
+				"name": "edenring:music/y3z0n-eternality",
+				"volume": 0.5,
+				"stream": true
+			}
+		]
+	},
+
+
 	"edenring.ambience.golden_forest": {
 		"category": "ambience",
 		"sounds": [

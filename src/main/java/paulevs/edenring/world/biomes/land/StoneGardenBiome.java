@@ -7,6 +7,7 @@ import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import paulevs.edenring.registries.EdenBiomes;
 import paulevs.edenring.registries.EdenFeatures;
+import paulevs.edenring.registries.EdenSounds;
 import paulevs.edenring.world.biomes.BiomesCommonMethods;
 import paulevs.edenring.world.biomes.EdenRingBiome;
 
@@ -21,6 +22,7 @@ public class StoneGardenBiome extends EdenRingBiome.Config {
         builder
                 .fogDensity(1F)
                 .plantsColor(162, 190, 113)
+                .music(EdenSounds.MUSIC_ETERNALITY)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_TALL_GRASS)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, MiscOverworldPlacements.FOREST_ROCK)

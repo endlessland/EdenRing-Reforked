@@ -54,7 +54,7 @@ public class GiganticVolvoxFeature extends DefaultFeature {
 		BlockState volvoxDense = EdenBlocks.VOLVOX_BLOCK_DENSE.defaultBlockState();
 		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
 		BlockState water = Blocks.WATER.defaultBlockState();
-		float radius = MHelper.randRange(16F, 30F, random);
+		float radius = MHelper.randRange(16F, 25F, random);
 		pos = getCentered(pos, random);
 		List<BlockPos> sphere = new ArrayList<BlockPos>();
 		makeSphere(level, pos, radius, MHelper.randRange(0.5F, 0.75F, random), volvox, water, sphere);

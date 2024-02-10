@@ -27,6 +27,7 @@ public class OldMycoticForestBiome extends EdenRingBiome.Config {
                 .skyColor(113, 178, 255)
                 .fogColor(178, 112, 143)
                 .loop(EdenSounds.AMBIENCE_MYCOTIC_FOREST)
+                .music(EdenSounds.MUSIC_ETERNALITY)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(EdenFeatures.OLD_BALLOON_MUSHROOM_TREE)
                 .feature(EdenFeatures.BALLOON_MUSHROOM_TREE)

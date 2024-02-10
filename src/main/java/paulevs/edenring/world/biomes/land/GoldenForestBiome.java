@@ -24,6 +24,7 @@ public class GoldenForestBiome extends EdenRingBiome.Config {
                 .skyColor(113, 178, 255)
                 .fogColor(183, 212, 255)
                 .loop(EdenSounds.AMBIENCE_GOLDEN_FOREST)
+                .music(EdenSounds.MUSIC_COMMON)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_TALL_GRASS)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_LARGE_FERN)

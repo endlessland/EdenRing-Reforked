@@ -78,7 +78,7 @@ public class VolvoxFeature extends DefaultFeature {
 	private void generateMedium(WorldGenLevel level, BlockPos pos, RandomSource random) {
 		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
 		BlockState water = Blocks.WATER.defaultBlockState();
-		float radius = MHelper.randRange(7F, 10F, random);
+		float radius = MHelper.randRange(5F, 10F, random);
 		pos = getRandom(pos, random);
 		List<BlockPos> sphere = new ArrayList<BlockPos>();
 		makeSphere(level, pos, radius, random.nextFloat(), volvox, water, sphere);

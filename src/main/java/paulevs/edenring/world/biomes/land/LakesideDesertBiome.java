@@ -31,6 +31,7 @@ public class LakesideDesertBiome extends EdenRingBiome.Config {
                 .fogColor(237, 235, 203)
                 .grassColor(246, 222, 173)
                 .foliageColor(247, 165, 115)
+                .music(EdenSounds.MUSIC_INFINITY)
                 .loop(EdenSounds.AMBIENCE_LAKESIDE_DESSERT)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_DEAD_BUSH_2)
