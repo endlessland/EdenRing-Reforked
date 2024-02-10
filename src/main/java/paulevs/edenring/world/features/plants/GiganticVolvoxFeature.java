@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
-
 import org.betterx.bclib.api.v2.levelgen.features.features.DefaultFeature;
 import org.betterx.bclib.blocks.BlockProperties;
 import org.betterx.bclib.blocks.BlockProperties.TripleShape;
@@ -19,14 +18,13 @@ import org.betterx.bclib.util.MHelper;
 import org.betterx.bclib.util.SplineHelper;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
-
 import paulevs.edenring.blocks.SixSidePlant;
 import paulevs.edenring.registries.EdenBlocks;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class VolvoxFeature extends DefaultFeature {
+public class GiganticVolvoxFeature extends DefaultFeature {
 	@Override
 	public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> featurePlaceContext) {
 		WorldGenLevel level = featurePlaceContext.level();
@@ -34,16 +32,9 @@ public class VolvoxFeature extends DefaultFeature {
 		RandomSource random = featurePlaceContext.random();
 		
 		int type = random.nextInt(8);
-		if (type < 2) {
-			generateSmall(level, center, random);
+		if (type < 21) {
+			generateGigantic(level, center, random);
 		}
-		else if (type < 6) {
-			generateMedium(level, center, random);
-		}
-		else {
-			generateLarge(level, center, random);
-		}
-		
 		return true;
 	}
 	
@@ -58,47 +49,21 @@ public class VolvoxFeature extends DefaultFeature {
 		int z = (pos.getZ() & 0xFFFFFFF0) | 8;
 		return new BlockPos(x, MHelper.randRange(64, 192, random), z);
 	}
-	
-	private void generateSmall(WorldGenLevel level, BlockPos pos, RandomSource random) {
-		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
-		int count = MHelper.randRange(3, 7, random);
-		pos = getCentered(pos, random);
-		float distance = MHelper.randRange(4F, 6F, random);
-		List<Vector3f> points = makeFibonacciPoints(count);
-		for (int i = 0; i < count; i++) {
-			Vector3f p = points.get(i);
-			float radius = MHelper.randRange(1.5F, 3F, random);
-			float px = p.x() * distance + 0.5F;
-			float py = p.y() * distance + 0.5F;
-			float pz = p.z() * distance + 0.5F;
-			makeSphere(level, pos.offset((int)px, (int)py, (int)pz), radius, -1, volvox, null, null);
-		}
-	}
-	
-	private void generateMedium(WorldGenLevel level, BlockPos pos, RandomSource random) {
-		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
-		BlockState water = Blocks.WATER.defaultBlockState();
-		float radius = MHelper.randRange(7F, 10F, random);
-		pos = getRandom(pos, random);
-		List<BlockPos> sphere = new ArrayList<BlockPos>();
-		makeSphere(level, pos, radius, random.nextFloat(), volvox, water, sphere);
-		addSmallPlants(level, pos, sphere, random);
-	}
 
-	private void generateLarge(WorldGenLevel level, BlockPos pos, RandomSource random) {
+	private void generateGigantic(WorldGenLevel level, BlockPos pos, RandomSource random) {
 		BlockState volvoxDense = EdenBlocks.VOLVOX_BLOCK_DENSE.defaultBlockState();
 		BlockState volvox = EdenBlocks.VOLVOX_BLOCK.defaultBlockState();
 		BlockState water = Blocks.WATER.defaultBlockState();
-		float radius = MHelper.randRange(10F, 15F, random);
+		float radius = MHelper.randRange(16F, 30F, random);
 		pos = getCentered(pos, random);
 		List<BlockPos> sphere = new ArrayList<BlockPos>();
 		makeSphere(level, pos, radius, MHelper.randRange(0.5F, 0.75F, random), volvox, water, sphere);
-		
+
 		Vector3f offset = new Vector3f(0.5F, 0.5F, 0.5F);
 		Vector3f axis = new Vector3f(
-			MHelper.randRange(-1F, 1F, random),
-			MHelper.randRange(-1F, 1F, random),
-			MHelper.randRange(-1F, 1F, random)
+				MHelper.randRange(-1F, 1F, random),
+				MHelper.randRange(-1F, 1F, random),
+				MHelper.randRange(-1F, 1F, random)
 		);
 		axis.normalize();
 		float angle = random.nextFloat() * (float) Math.PI * 2;
@@ -112,6 +77,7 @@ public class VolvoxFeature extends DefaultFeature {
 		}
 		addSmallPlants(level, pos, sphere, random);
 	}
+	
 	private void addSmallPlants(WorldGenLevel level, BlockPos center, List<BlockPos> blocks, RandomSource random) {
 		MutableBlockPos pos = new MutableBlockPos();
 		BlockState mold1 = EdenBlocks.SYMBIOTIC_MOLD.defaultBlockState();

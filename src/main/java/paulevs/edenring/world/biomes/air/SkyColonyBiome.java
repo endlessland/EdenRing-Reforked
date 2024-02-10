@@ -25,6 +25,7 @@ public class SkyColonyBiome extends EdenRingBiome.Config {
                 .plantsColor(0x1e7d56)
                 .particles(EdenParticles.YOUNG_VOLVOX, 0.0001F)
                 .feature(EdenFeatures.VOLVOX)
+                .feature(EdenFeatures.GIGANTIC_VOLVOX)
                 .feature(EdenFeatures.PARIGNUM);
     }
 }

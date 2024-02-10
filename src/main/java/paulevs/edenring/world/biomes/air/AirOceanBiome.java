@@ -15,6 +15,6 @@ public class AirOceanBiome extends EdenRingBiome.Config {
     @Override
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultVoidFeatures(builder);
-        builder.spawn(EdenEntities.DISKWING, 20, 3, 6);
+        builder.spawn(EdenEntities.DISKWING, 20, 3, 10);
     }
 }
