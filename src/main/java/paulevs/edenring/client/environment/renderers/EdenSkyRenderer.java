@@ -311,7 +311,7 @@ public class EdenSkyRenderer implements SkyRenderer {
 			poseStack.pushPose();
 			poseStack.mulPose(Axis.YP.rotation((float) (time * 0.0002)));
 			float density = Mth.clamp(BackgroundInfo.fogDensity, 1, 2);
-			renderBuffer(
+			/*renderBuffer(
 				poseStack,
 				projectionMatrix,
 				horizon[0],
@@ -320,12 +320,12 @@ public class EdenSkyRenderer implements SkyRenderer {
 				BackgroundInfo.fogColorGreen,
 				BackgroundInfo.fogColorBlue,
 				(1.0F - skyBlend) * 0.5F * density
-			);
+			);*/
 			poseStack.popPose();
 			
 			poseStack.pushPose();
 			poseStack.mulPose(Axis.YP.rotation((float) (-time * 0.0001)));
-			renderBuffer(
+			/*renderBuffer(
 				poseStack,
 				projectionMatrix,
 				horizon[1],
@@ -334,7 +334,11 @@ public class EdenSkyRenderer implements SkyRenderer {
 				BackgroundInfo.fogColorGreen,
 				BackgroundInfo.fogColorBlue,
 				(1.0F - skyBlend) * 0.5F
-			);
+			);*/
+
+			// This isn't a very pretty solution. But as it stands now, by excluding them from the
+			// rendering stack, we lose only (AFAIK) biome fog, which had been broken anyway by the
+			// update to the new lighting engine.
 			poseStack.popPose();
 		}
 		

@@ -32,12 +32,7 @@ public abstract class ClientLevelMixin extends Level {
 			float time = getTimeOfDay(timeDelta);
 			float light = 1.0f - (Mth.cos(time * MHelper.PI2) * 2.0f + 0.2f);
 			light = Mth.clamp(light, 0.0f, 1.0f);
-			if (getThunderLevel(timeDelta)>1.0F) {
-				light = (1.0F - light) * (1.0F - (getThunderLevel(timeDelta) * 5.0F) / 16.0F);
-			}
-			else {
-				light = (1.0F - light);
-			}
+			light = (1.0F - light) * (1.0F - (getThunderLevel(timeDelta) * 5.0F) / 16.0F);
 			info.setReturnValue(light * 0.8F + 0.2F);
 		}
 	}
