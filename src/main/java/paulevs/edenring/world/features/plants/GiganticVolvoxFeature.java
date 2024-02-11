@@ -32,7 +32,7 @@ public class GiganticVolvoxFeature extends DefaultFeature {
 		RandomSource random = featurePlaceContext.random();
 		
 		int type = random.nextInt(8);
-		if (type < 21) {
+		if (type < 16) {
 			generateGigantic(level, center, random);
 		}
 		return true;
