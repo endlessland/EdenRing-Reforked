@@ -86,11 +86,11 @@ public class EdenBlocks {
 			BALLOON_MUSHROOM_SPOROCARP_COLORED.put(color, lantern);
 		}
 	}
-	
+	// Pulse Tree //
 	public static final Block PULSE_TREE_SAPLING = register("pulse_tree_sapling", new FeatureSaplingBlock<>((state) -> EdenFeatures.PULSE_TREE.configuredFeature));
 	public static final Block PULSE_TREE = register("pulse_tree", new PulseTreeBlock());
 	public static final ComplexMaterial PULSE_TREE_MATERIAL = new EdenWoodenComplexMaterial(EdenRing.MOD_ID, "pulse_tree", "eden", MapColor.COLOR_CYAN, MapColor.COLOR_CYAN).init(REGISTRY, EdenItems.REGISTRY);
-	
+	// Brain Tree //
 	public static final Block BRAIN_TREE_BLOCK_IRON = register("brain_tree_block_iron", new BrainTreeBlock(MapColor.COLOR_LIGHT_GRAY));
 	public static final Block BRAIN_TREE_BLOCK_COPPER = register("brain_tree_block_copper", new BrainTreeBlock(MapColor.COLOR_ORANGE));
 	public static final Block BRAIN_TREE_BLOCK_GOLD = register("brain_tree_block_gold", new BrainTreeBlock(MapColor.GOLD));
@@ -98,28 +98,26 @@ public class EdenBlocks {
 	public static final Block COPPER_FRAMED_BRAIN_TREE_LOG = register("copper_framed_brain_tree_log", new BrainTreeLogBlock());
 	public static final Block IRON_FRAMED_BRAIN_TREE_LOG = register("iron_framed_brain_tree_log", new BrainTreeLogBlock());
 	public static final Block GOLD_FRAMED_BRAIN_TREE_LOG = register("gold_framed_brain_tree_log", new BrainTreeLogBlock());
-	
+	// Volvox //
 	public static final Block VOLVOX_BLOCK = register("volvox_block", new VolvoxBlock());
 	public static final Block VOLVOX_BLOCK_DENSE = register("volvox_block_dense", new VolvoxBlockDense());
-	
+	// Aquatus //
 	public static final Block AQUATUS_SAPLING = register("aquatus_sapling", new AquatusSapling());
 	public static final Block AQUATUS_BLOCK = register("aquatus_block", new AquatusBlock());
 	public static final Block AQUATUS_ROOTS = registerBlockOnly("aquatus_roots", new AquatusRootsBlock());
-	
+	// Mosses //
 	public static final Block EDEN_MOSS = register("eden_moss", new EdenMossBlock());
 	public static final Block PARIGNUM = register("parignum", new Parignum());
-	
+	// Grasses //
 	public static final Block MYCOTIC_GRASS = register("mycotic_grass", new MycoticGrass());
 	public static final Block GOLDEN_GRASS = register("golden_grass", new OverlayPlantBlock(true));
-	
 	public static final Block COPPER_GRASS = register("copper_grass", new OverlayPlantBlock(true));
 	public static final Block IRON_GRASS = register("iron_grass", new OverlayPlantBlock(true));
 	public static final Block GOLD_GRASS = register("gold_grass", new OverlayPlantBlock(true));
-	
 	public static final Block TALL_COPPER_GRASS = register("tall_copper_grass", new OverlayDoublePlantBlock());
 	public static final Block TALL_IRON_GRASS = register("tall_iron_grass", new OverlayDoublePlantBlock());
 	public static final Block TALL_GOLD_GRASS = register("tall_gold_grass", new OverlayDoublePlantBlock());
-	
+	// Plants //
 	public static final Block LONLIX = register("lonlix", new OverlayPlantBlock(true));
 	
 	public static final Block VIOLUM = register("violum", new OverlayDoublePlantBlock());
@@ -127,7 +125,7 @@ public class EdenBlocks {
 	public static final Block TALL_MYCOTIC_GRASS = register("tall_mycotic_grass", new EdenDoublePlantBlock());
 	public static final Block LIMPHIUM_SAPLING = register("limphium_sapling", new LimphiumSapling());
 	public static final Block LIMPHIUM = registerBlockOnly("limphium", new LimphiumBlock());
-	//public static final Block ALAESPES = register("alaespes", new AlaespesBlock());
+	// public static final Block ALAESPES = register("alaespes", new AlaespesBlock());
 	
 	public static final Block EDEN_VINE = register("eden_vine", new OverlayVineBlock());
 	
@@ -147,7 +145,7 @@ public class EdenBlocks {
 	
 	//public static final Block INSULECTRICA_STEM = register("insulectrica_stem", new BaseBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
 	//public static final Block INSULECTRICA_ROD = register("insulectrica_rod", new BaseBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
-	
+
 	public static void init() {
 		BlockRegistry.getModBlocks(EdenRing.MOD_ID).forEach(block -> {
 			if (block instanceof BaseLeavesBlock) {
