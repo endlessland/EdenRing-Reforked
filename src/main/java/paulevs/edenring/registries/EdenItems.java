@@ -16,6 +16,7 @@ public class EdenItems {
 	public static final Item LIMPHIUM_LEAF = register("limphium_leaf", new ModelProviderItem(REGISTRY.makeItemSettings()));
 	public static final Item LIMPHIUM_LEAF_DRYED = register("limphium_leaf_dryed", new ModelProviderItem(REGISTRY.makeItemSettings()));
 	public static final Item LIMPHIUM_PAINTING = register("limphium_painting", new EdenPaintingItem(EdenEntities.LIMPHIUM_PAINTING, REGISTRY.makeItemSettings()));
+	// public static final Item ASTRALLIUM = register("astrallium", new AstralliumItem(REGISTRY.makeItemSettings().stacksTo(32)));
 	
 	public static void init() {
 		ComposterAPI.allowCompost(0.3F, LIMPHIUM_LEAF);
