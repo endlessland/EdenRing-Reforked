@@ -27,6 +27,7 @@ public class EdenBiomes {
     // VOID //
     public static final ResourceKey<Biome> AIR_OCEAN = cKey("air_ocean");
     public static final ResourceKey<Biome> SKY_COLONY = cKey("sky_colony");
+    public static final ResourceKey<Biome> OLD_SKY_COLONY = cKey("old_sky_colony");
 
     // CAVES
     public static final ResourceKey<Biome> EMPTY_CAVE = cKey("empty_cave");
