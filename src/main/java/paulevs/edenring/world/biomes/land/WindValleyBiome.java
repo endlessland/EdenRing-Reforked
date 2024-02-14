@@ -26,7 +26,7 @@ public class WindValleyBiome extends EdenRingBiome.Config {
                 .grassColor(225, 84, 72)
                 .foliageColor(230, 63, 50)
                 .loop(EdenSounds.AMBIENCE_WIND_VALLEY)
-                .music(EdenSounds.MUSIC_INFINITY)
+                .music(EdenSounds.MUSIC_COMMON)
                 .particles(EdenParticles.WIND_PARTICLE, 0.001F)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(EdenFeatures.VIOLUM_RARE)

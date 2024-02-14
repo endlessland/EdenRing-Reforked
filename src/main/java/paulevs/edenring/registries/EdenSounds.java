@@ -9,10 +9,6 @@ import paulevs.edenring.EdenRing;
 public class EdenSounds {
 	public static final SoundEvent BLOCK_ELECTRIC = register("block", "electric");
 	public static final Holder<SoundEvent> MUSIC_COMMON = registerForHolder("music", "common");
-	public static final Holder<SoundEvent> MUSIC_PULSE_FOREST = registerForHolder("music", "pulse_forest");
-	public static final Holder<SoundEvent> MUSIC_BRAINSTORM = registerForHolder("music", "brainstorm");
-	public static final Holder<SoundEvent> MUSIC_INFINITY = registerForHolder("music", "infinity");
-	public static final Holder<SoundEvent> MUSIC_ETERNALITY = registerForHolder("music", "eternality");
 	
 	public static final Holder<SoundEvent> AMBIENCE_BRAINSTORM = registerForHolder("ambience", "brainstorm");
 	public static final Holder<SoundEvent> AMBIENCE_GOLDEN_FOREST = registerForHolder("ambience", "golden_forest");

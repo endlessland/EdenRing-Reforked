@@ -22,7 +22,7 @@ public class StoneGardenBiome extends EdenRingBiome.Config {
         builder
                 .fogDensity(1F)
                 .plantsColor(162, 190, 113)
-                .music(EdenSounds.MUSIC_ETERNALITY)
+                .music(EdenSounds.MUSIC_COMMON)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_TALL_GRASS)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, MiscOverworldPlacements.FOREST_ROCK)

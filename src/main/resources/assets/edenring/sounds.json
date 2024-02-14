@@ -32,43 +32,22 @@
 				"name": "edenring:music/y3z0n-ring_of_eden",
 				"volume": 0.5,
 				"stream": true
-			}
-		]
-	},
-
-	"edenring.music.pulse_forest" : {
-		"category": "music",
-		"sounds" : [
+			},
 			{
 				"name": "edenring:music/firel-orbital",
 				"volume": 0.6,
 				"stream": true
-			}
-		]
-	},
-	"edenring.music.brainstorm" : {
-		"category": "music",
-		"sounds" : [
+			},
 			{
 				"name": "edenring:music/firel-brainstorm",
 				"volume": 0.6,
 				"stream": true
-			}
-		]
-	},
-	"edenring.music.infinity" : {
-		"category": "music",
-		"sounds" : [
+			},
 			{
 				"name": "edenring:music/y3z0n-infinity",
 				"volume": 0.5,
-				"stream": true
-			}
-		]
-	},
-	"edenring.music.eternality" : {
-		"category": "music",
-		"sounds" : [
+				"stream": true,
+			},
 			{
 				"name": "edenring:music/y3z0n-eternality",
 				"volume": 0.5,
@@ -76,7 +55,6 @@
 			}
 		]
 	},
-
 
 	"edenring.ambience.golden_forest": {
 		"category": "ambience",

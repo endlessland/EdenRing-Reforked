@@ -24,7 +24,7 @@ public class BrainStormBiome extends EdenRingBiome.Config {
                 .fogColor(180, 180, 180)
                 .plantsColor(200, 200, 200)
                 .loop(EdenSounds.AMBIENCE_BRAINSTORM)
-                .music(EdenSounds.MUSIC_BRAINSTORM)
+                .music(EdenSounds.MUSIC_COMMON)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_GRASS_FOREST)
                 .feature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_TALL_GRASS)
                 .feature(EdenFeatures.TALL_COPPER_GRASS)
