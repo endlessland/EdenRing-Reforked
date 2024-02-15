@@ -5,9 +5,9 @@ import paulevs.edenring.registries.*;
 import paulevs.edenring.world.biomes.BiomesCommonMethods;
 import paulevs.edenring.world.biomes.EdenRingBiome;
 
-public class OldSkyColonyBiome extends EdenRingBiome.Config {
-    public OldSkyColonyBiome() {
-        super(EdenBiomes.OLD_SKY_COLONY.location());
+public class GraviliteDebrisFieldBiome extends EdenRingBiome.Config {
+    public GraviliteDebrisFieldBiome() {
+        super(EdenBiomes.GRAVILITE_DEBRIS_FIELD.location());
     }
 
     @Override
@@ -16,13 +16,10 @@ public class OldSkyColonyBiome extends EdenRingBiome.Config {
         builder
                 .spawn(EdenEntities.DISKWING, 20, 4, 8)
                 .fogDensity(1F)
-                .fogColor(0x84d341)
-                .waterColor(0x1e7d56)
-                .plantsColor(0x1e7d56)
+                .fogColor(0x00d0ff)
+                .waterColor(0x00c3ff)
+                .plantsColor(0x44854d)
                 .music(EdenSounds.MUSIC_COMMON)
-                .particles(EdenParticles.YOUNG_VOLVOX, 0.0001F)
-                .feature(EdenFeatures.HUGE_VOLVOX)
-                .feature(EdenFeatures.GIGANTIC_VOLVOX)
-                .feature(EdenFeatures.PARIGNUM);
+                .feature(EdenFeatures.GRAVILITE_CRYSTAL);
     }
 }
