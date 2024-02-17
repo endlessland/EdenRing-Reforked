@@ -23,6 +23,7 @@ public class EdenBiomes {
     public static final ResourceKey<Biome> BRAINSTORM = cKey("brainstorm");
     public static final ResourceKey<Biome> LAKESIDE_DESERT = cKey("lakeside_desert");
     public static final ResourceKey<Biome> WIND_VALLEY = cKey("wind_valley");
+    // public static final ResourceKey<Biome> CLOUD_FOREST = cKey("cloud_forest");
 
     // VOID //
     public static final ResourceKey<Biome> AIR_OCEAN = cKey("air_ocean");
