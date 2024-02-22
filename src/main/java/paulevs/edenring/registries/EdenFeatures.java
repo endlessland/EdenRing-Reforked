@@ -124,7 +124,6 @@ public class EdenFeatures {
 	
 	public static final BCLFeature<SixSideScatter, NoneFeatureConfiguration> PARIGNUM = registerVegetation("parignum", inlineBuild("parignum", new SixSideScatter((SixSidePlant) EdenBlocks.PARIGNUM)), 8);
 	public static final BCLFeature<TallMushroomFeature, NoneFeatureConfiguration> TALL_BALLOON_MUSHROOM = registerVegetation("tall_balloon_mushroom", inlineBuild("tall_balloon_mushroom", new TallMushroomFeature()), 6);
-	
 	public static final BCLFeature<GraviliteCrystalFeature, NoneFeatureConfiguration> GRAVILITE_CRYSTAL = registerRawGen("gravilite_crystal", inlineBuild("gravilite_crystal", new GraviliteCrystalFeature()), 100);
 	public static final BCLFeature<SmallIslandFeature, NoneFeatureConfiguration> SMALL_ISLAND = registerRawGen("small_island", inlineBuild("small_island", new SmallIslandFeature()), 50);
 

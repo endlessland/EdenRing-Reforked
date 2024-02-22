@@ -14,7 +14,7 @@ public class GraviliteDebrisFieldBiome extends EdenRingBiome.Config {
     protected void addCustomBuildData(BCLBiomeBuilder builder) {
         BiomesCommonMethods.addDefaultVoidFeatures(builder);
         builder
-                .spawn(EdenEntities.DISKWING, 20, 4, 8)
+                .spawn(EdenEntities.DISKWING, 10, 1, 2)
                 .fogDensity(1F)
                 .fogColor(0x00d0ff)
                 .waterColor(0x00c3ff)

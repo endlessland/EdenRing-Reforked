@@ -5,23 +5,17 @@
   },
   "downfall": 1.0,
   "effects": {
-    "fog_color": 8704833,
-    "foliage_color": 1998166,
-    "grass_color": 1998166,
+    "fog_color": 53503,
+    "foliage_color": 4490573,
+    "grass_color": 4490573,
     "music": {
       "max_delay": 2400,
       "min_delay": 600,
       "replace_current_music": true,
       "sound": "edenring:edenring.music.common"
     },
-    "particle": {
-      "options": {
-        "type": "edenring:young_volvox"
-      },
-      "probability": 1.0E-4
-    },
     "sky_color": -9325825,
-    "water_color": 1998166,
+    "water_color": 50175,
     "water_fog_color": 329011
   },
   "features": [
@@ -37,11 +31,7 @@
     [],
     [],
     [],
-    [
-      "edenring:volvox",
-      "edenring:gigantic_volvox",
-      "edenring:parignum"
-    ]
+    []
   ],
   "has_precipitation": false,
   "spawn_costs": {},
@@ -49,9 +39,9 @@
     "ambient": [
       {
         "type": "edenring:diskwing",
-        "maxCount": 6,
-        "minCount": 3,
-        "weight": 20
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 10
       }
     ],
     "axolotls": [],
