@@ -45,7 +45,8 @@
 		"bclib": ">=3.0.14"
 	},
 	"breaks": {
-		"bclib": "<3"
+		"bclib": "<3",
+		"fabric-api": ">=0.92.0"
 	},
 	"custom": {
 		"bclib": {
