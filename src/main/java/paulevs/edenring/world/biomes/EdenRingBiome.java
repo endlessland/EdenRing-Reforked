@@ -161,7 +161,8 @@ public class EdenRingBiome extends BCLBiome implements SurfaceMaterialProvider {
         return create(data, parentBiome.getIntendedType(), parentBiome);
     }
 
-    private static EdenRingBiome create(Config biomeConfig, BiomeAPI.BiomeType type, BCLBiome parentBiome) {
+
+    public static EdenRingBiome create(Config biomeConfig, BiomeAPI.BiomeType type, BCLBiome parentBiome) {
         BCLBiomeBuilder builder = BCLBiomeBuilder
                 .start(biomeConfig.ID)
                 .music(EdenSounds.MUSIC_COMMON)
@@ -169,9 +170,13 @@ public class EdenRingBiome extends BCLBiome implements SurfaceMaterialProvider {
                 .waterFogColor(329011)
                 .fogColor(183, 212, 255)
                 .skyColor(113, 178, 255)
-                .parentBiome(parentBiome)
                 .surface(biomeConfig.surfaceMaterial().surface().build())
                 .type(type);
+
+        // Check if parentBiome is not null before setting it
+        if (parentBiome != null) {
+            builder.parentBiome(parentBiome);
+        }
 
         biomeConfig.addCustomBuildData(builder);
 
