@@ -45,7 +45,7 @@ public void onInitialize() {
           item -> BaseRegistry.getModBlockItems(MOD_ID).contains(item)
               || BaseRegistry.getModItems(MOD_ID).contains(item)
       )
-      .setIcon(EdenBlocks.MOSSY_STONE)
+      .setIcon(EdenBlocks.VOLVOX_BLOCK)
       .build()
       .processBCLRegistry()
       .register();
@@ -59,7 +59,7 @@ public void onInitialize() {
   EdenEntities.init();
   EdenItems.init();
   EdenFeatures.register();
-//  EdenRecipes.register(); Use data generation
+  // EdenRecipes.register(); Use data generation
   EdenParticles.ensureStaticallyLoadedServerside();
   Configs.saveConfigs();
   
