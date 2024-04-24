@@ -151,7 +151,7 @@ public class EdenRingBiome extends BCLBiome implements SurfaceMaterialProvider {
     }
 
     public EdenRingBiome(ResourceKey<Biome> biomeID, BCLBiomeSettings settings) {
-        super(biomeID, settings);
+        super(biomeID, settings != null ? settings : new CBCLBiomeSettings());
     }
 
     public static EdenRingBiome create(Config biomeConfig, BiomeAPI.BiomeType type) {

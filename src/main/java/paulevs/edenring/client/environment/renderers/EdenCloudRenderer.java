@@ -28,6 +28,7 @@ public class EdenCloudRenderer implements CloudRenderer {
 		}
 		return random.nextInt(16) == 0 ? 1 : 0;
 	});
+
 	
 	@Override
 	@SuppressWarnings("resource")
